@@ -1,14 +1,15 @@
 import React from 'react'
 
-import useScrollDirection from '../../hooks/useScrollDirection'
+import useScrollTrigger from '../../hooks/useScrollTrigger'
 
 import './Navbar.css'
 
 const Navbar = () => {
-  const { scrollingDown } = useScrollDirection()
+  const { showNav, elemToTriggerNav } = useScrollTrigger()
+  elemToTriggerNav('.sec2')
 
   return (
-    <nav className={scrollingDown ? 'secondaryNav' : ''}>
+    <nav className={showNav ? 'secondaryNav' : ''}>
       <div className='logo'>
         <img src='logo512.png' alt='logo' />
       </div>
