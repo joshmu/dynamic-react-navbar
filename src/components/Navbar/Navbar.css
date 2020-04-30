@@ -50,17 +50,21 @@ nav.secondaryNav ul li {
   color: var(--fontColor);
 }
 
-nav ul li.active {
+nav ul li.active,
+nav ul li:hover {
   background-color: none;
   border-bottom: 1px solid var(--fontColor);
 }
 
-nav.secondaryNav ul li.active {
+nav.secondaryNav ul li.active,
+nav.secondaryNav ul li:hover {
   background-color: rgba(255, 255, 255, 0.8);
   color: black;
+  border: none;
 }
 
-nav.secondaryNav ul li.active a {
+nav.secondaryNav ul li.active a,
+nav.secondaryNav ul li:hover a {
   color: black;
 }
 nav.secondaryNav {
